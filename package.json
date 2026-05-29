@@ -1,1 +1,70 @@
-[see local for full, but using tool to push actual]
+{
+  "name": "famcli",
+  "version": "0.1.0",
+  "description": "famcli — modular pet/familiar companion CLI harness. Short command `famcli` to launch GUI/harness. Pluggable Notion (via familiar-gui worker) vs Obsidian backends. Evolves the Familiar GUI surface from the 16-step gui.bind capsule chain.",
+  "type": "module",
+  "bin": {
+    "famcli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "dev:watch": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "gui": "tsx src/commands/gui.ts",
+    "famcli": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "cli",
+    "familiar",
+    "pet",
+    "companion",
+    "notion",
+    "obsidian",
+    "gui",
+    "harness",
+    "agent"
+  ],
+  "dependencies": {
+    "commander": "^12.1.0",
+    "zod": "^3.23.8",
+    "yaml": "^2.5.0",
+    "better-sqlite3": "^11.5.0",
+    "ink": "^5.1.0",
+    "react": "^18.3.1",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5",
+    "eslint": "^9.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.15.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igor-holt/famcli.git"
+  },
+  "homepage": "https://github.com/igor-holt/famcli#readme",
+  "bugs": {
+    "url": "https://github.com/igor-holt/famcli/issues"
+  },
+  "author": "Igor Holt (@invariantx)",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "obsidian-vault-template"
+  ]
+}
