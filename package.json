@@ -46,7 +46,7 @@
     "@types/react": "^18.3.12",
     "tsx": "^4.20.6",
     "typescript": "^5.7.2",
-    "vitest": "^3.0.5",
+    "vitest": "^4.1.8",
     "eslint": "^9.15.0",
     "@typescript-eslint/parser": "^8.15.0",
     "@typescript-eslint/eslint-plugin": "^8.15.0"
